@@ -1,1 +1,76 @@
 @import 'reset'
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic')
+
+// переменные
+$white : #fafafa
+$white_hover: #C5CAE9
+$bgc1 : #24323F
+$bgc2 : #314252
+
+$gape : 30px
+
+// основы
+
+body
+	font-family: 'roboto', 'serif', 'san-serif'
+	color: $white
+	padding: 0px $gape*4
+
+
+// ##     ## ########    ###    ########  ######## ########
+// ##     ## ##         ## ##   ##     ## ##       ##     ##
+// ##     ## ##        ##   ##  ##     ## ##       ##     ##
+// ######### ######   ##     ## ##     ## ######   ########
+// ##     ## ##       ######### ##     ## ##       ##   ##
+// ##     ## ##       ##     ## ##     ## ##       ##    ##
+// ##     ## ######## ##     ## ########  ######## ##     ##
+
+.header_container
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: no-wrap
+	background-color: $bgc1
+	height: $gape*3
+	line-height: $gape
+	padding: 0px $gape*2
+	font-size: 30px
+
+.header_title
+	flex-grow: 1
+.phone
+	margin-right: $gape*2
+
+.order
+
+
+
+//  ######   #######  ##     ## ##     ##  #######  ##    ##
+// ##    ## ##     ## ###   ### ###   ### ##     ## ###   ##
+// ##       ##     ## #### #### #### #### ##     ## ####  ##
+// ##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##
+// ##       ##     ## ##     ## ##     ## ##     ## ##  ####
+// ##    ## ##     ## ##     ## ##     ## ##     ## ##   ###
+//  ######   #######  ##     ## ##     ##  #######  ##    ##
+.btn
+	transition: all .1s ease
+	cursor: pointer
+	position: relative
+	&:hover
+		color: $white_hover
+	&:active
+		top: 2px
+		left: 0
+			
+
+
+
+
+//    ###    ##    ## #### ##     ## ########
+//   ## ##   ###   ##  ##  ###   ### ##
+//  ##   ##  ####  ##  ##  #### #### ##
+// ##     ## ## ## ##  ##  ## ### ## ######
+// ######### ##  ####  ##  ##     ## ##
+// ##     ## ##   ###  ##  ##     ## ##
+// ##     ## ##    ## #### ##     ## ########
